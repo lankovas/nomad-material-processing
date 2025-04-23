@@ -1,0 +1,69 @@
+definitions:
+  name: Tutorial 8 Schema
+  sections:
+    MySubstrate:
+      base_sections:
+        - nomad.datamodel.data.EntryData #inheritance?
+      quantities:
+        id:
+          type: str
+          m_annotations: # without this the id would be fixed and we could not change it in NOMAD 
+            eln:
+              component: StringEditQuantity
+        material:
+          type: str
+          m_annotations: 
+            eln:
+              component: StringEditQuantity
+        date_recieved:
+          type: Datetime
+          m_annotations: 
+            eln:
+              component: DateTimeEditQuantity
+        dosing_type:
+          type:
+            type_kind: Enum
+            type_data:
+              - 'n'
+              - 'p'
+              - 'none'
+          m_annotations: 
+            eln:
+              component: RadioEnumEditQuantity
+        doping:
+          type: np.float64
+          unit: ohm*cm
+          description: The doping measured as electrical resistivity
+          m_annotations: 
+            eln:
+              component: NumberEditQuantity
+        comment:
+          type: str
+          m_annotations: 
+            eln:
+              component: RichTextEditQuantity       
+      sub_sections:
+        dimensions:
+          section:
+            qunatities:
+              length:
+                type: np.float64
+                unit: mm
+                m_annotations: 
+                  eln:
+                    component: NumberEditQuantity
+                    defaultDisplayUnit: mm
+              width:
+                type: np.float64
+                unit: mm
+                m_annotations: 
+                  eln:
+                    component: NumberEditQuantity
+                    defaultDisplayUnit: mm
+              height:
+                type: np.float64
+                unit: mm
+                m_annotations: 
+                  eln:
+                    component: NumberEditQuantity
+                    defaultDisplayUnit: mm
