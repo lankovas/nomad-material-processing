@@ -34,6 +34,9 @@ from nomad.metainfo import (
     SubSection,
 )
 from nomad.units import ureg
+from structlog.stdlib import (
+    BoundLogger,
+)
 
 if TYPE_CHECKING:
     from nomad.datamodel.datamodel import (
@@ -42,6 +45,7 @@ if TYPE_CHECKING:
     from structlog.stdlib import (
         BoundLogger,
     )
+
 
 m_package = Package(name='Tutorial 13 sintering schema')
 
@@ -100,37 +104,38 @@ class Sintering(Process, EntryData, ArchiveSection):
         section_def=TemperatureRamp,
         repeats=True,
     )
-
     data_file = Quantity(
         type=str,
-        description='This is a recipe file for the sintering process',
-        a_eln={'component': 'FileEditQuantity'},
+        description='The recipe file for the sintering process.',
+        a_eln={
+            'component': 'FileEditQuantity',
+        },
     )
 
-    def normalize(self, archive: 'EntryArchive', logger: 'BoundLogger') -> None:
+    def normalize(self, archive, logger: BoundLogger) -> None:
         """
         The normalizer for the `Sintering` class.
-        Gets called every time the user saves the ELN.
 
         Args:
             archive (EntryArchive): The archive containing the section that is being
             normalized.
             logger (BoundLogger): A structlog logger.
         """
+        # super(Sintering, self).normalize(archive, logger)
         super().normalize(archive, logger)
         if self.data_file:
-            with archive.m_context.raw_file(self.datafile) as file:
-                df = pd.read_cvs(file)  # df for data frame
+            with archive.m_context.raw_file(self.data_file) as file:
+                df = pd.read_csv(file,)
             steps = []
             for i, row in df.iterrows():
                 step = TemperatureRamp()
                 step.name = row['step name']
-                step.duration = ureg.Quantity(float(row['duration [min]']), 'min')
+                step.duration = ureg.Quantity(row['duration [min]'], 'minutes')
                 step.initial_temperature = ureg.Quantity(
                     row['initial temperature [C]'], 'celsius'
                 )
                 step.final_temperature = ureg.Quantity(
-                    row['initial temperature [C]'], 'celsius'
+                    row['final temperature [C]'], 'celsius'
                 )
                 steps.append(step)
             self.steps = steps

@@ -56,7 +56,8 @@ dev = [
     "pymdown-extensions",
     "mkdocs-click",
     "mkdocs-macros-plugin>=1.0",
-    "pydantic>=2.0,<2.11"
+    "pydantic>=2.0,<2.11",
+    "openpyxl",
 ]
 
 [tool.ruff]
@@ -146,5 +147,6 @@ pld_schema = "nomad_material_processing.vapor_deposition.pvd:pld_schema"
 sputtering_schema = "nomad_material_processing.vapor_deposition.pvd:sputtering_schema"
 thermal_schema = "nomad_material_processing.vapor_deposition.pvd:thermal_schema"
 sintering_schema = "nomad_material_processing.sintering:schema"
+measurement_schema = "nomad_material_processing.measurements:schema"
 
 [tool.setuptools_scm]
