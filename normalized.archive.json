@@ -1,8 +1,8 @@
 {
   "data": {
-    "m_def": "nomad_material_processing.measurements.MRO005.MyProcessColumn",
+    "m_def": "nomad_material_processing.measurements.MRO005.MRO005",
     "name": "test MRO005",
-    "datetime": "2025-05-11T23:07:24.905681+00:00",
+    "datetime": "2025-05-12T16:32:44.273588+00:00",
     "fill_archive_from_datafile": false,
     "data_file": "MRO005 ohne IR 2016-08-24.xlsx",
     "process_time": [
@@ -16942,17 +16942,128 @@
       27.8330345153809,
       27.7191829681396,
       27.5571060180664
+    ],
+    "steps": [
+      {
+        "name": "step1",
+        "start_time": "2025-05-12T00:00:00+00:00",
+        "duration": 5,
+        "action": "Start of experiment on 24/08/2016 at 11:57:10 with  Tj set to 25 C and stirrer off, (NH4)2HPO4=20 ml",
+        "end_time": "2025-05-12T00:00:05+00:00",
+        "temperature": 0.0
+      },
+      {
+        "name": "step2",
+        "start_time": "2025-05-12T00:00:05+00:00",
+        "duration": 5,
+        "action": "Ramp stirrer speed to 200 rpm over 3 sec",
+        "end_time": "2025-05-12T00:00:10+00:00",
+        "temperature": 25.4
+      },
+      {
+        "name": "step3",
+        "start_time": "2025-05-12T00:00:10+00:00",
+        "duration": 187,
+        "action": "Cool Tr to 10 \u00b0C at 5 K/min",
+        "end_time": "2025-05-12T00:03:18+00:00",
+        "temperature": 25.4
+      },
+      {
+        "name": "step4",
+        "start_time": "2025-05-12T00:03:18+00:00",
+        "duration": 600,
+        "action": "Wait 10 min",
+        "end_time": "2025-05-12T00:13:18+00:00",
+        "temperature": 22.0
+      },
+      {
+        "name": "step5",
+        "start_time": "2025-05-12T00:13:18+00:00",
+        "duration": 632,
+        "action": "Dose 5 ml of Ca(NO3)2 Ce(NO3)3 at 0.5 ml/min using DU1",
+        "end_time": "2025-05-12T00:23:50+00:00",
+        "temperature": 10.3
+      },
+      {
+        "name": "step6",
+        "start_time": "2025-05-12T00:23:50+00:00",
+        "duration": 1800,
+        "action": "Wait 30 min",
+        "end_time": "2025-05-12T00:53:50+00:00",
+        "temperature": 10.2
+      },
+      {
+        "name": "step7",
+        "start_time": "2025-05-12T00:53:50+00:00",
+        "duration": 782,
+        "action": "Heat Tr to 75 \u00b0C at 5 K/min",
+        "end_time": "2025-05-12T01:06:52+00:00",
+        "temperature": 10.0
+      },
+      {
+        "name": "step8",
+        "start_time": "2025-05-12T01:06:52+00:00",
+        "duration": 302,
+        "action": "Heat Tr to 80 \u00b0C at 1 K/min",
+        "end_time": "2025-05-12T01:11:54+00:00",
+        "temperature": 71.9
+      },
+      {
+        "name": "step9",
+        "start_time": "2025-05-12T01:11:54+00:00",
+        "duration": 600,
+        "action": "Wait 10 min",
+        "end_time": "2025-05-12T01:21:54+00:00",
+        "temperature": 80.8
+      },
+      {
+        "name": "step10",
+        "start_time": "2025-05-12T01:21:55+00:00",
+        "duration": 723,
+        "action": "Cool Tr to 20\u00b0C at 5 K/min",
+        "end_time": "2025-05-12T01:33:58+00:00",
+        "temperature": 81.2
+      },
+      {
+        "name": "step11",
+        "start_time": "2025-05-12T01:33:58+00:00",
+        "duration": 5,
+        "action": "End of experiment on 24/08/2016 at 13:31:08  with Tj set to 25 \u00b0C and stirrer off",
+        "end_time": "2025-05-12T01:34:04+00:00",
+        "temperature": 28.1
+      }
     ]
   },
   "metadata": {
     "entry_name": "test_MRO005.archive.yaml",
-    "entry_type": "MyProcessColumn",
+    "entry_type": "MRO005",
     "mainfile": "/home/lankovas/nomad-distro-dev/packages/nomad-material-processing/tests/data/test_MRO005.archive.yaml",
     "text_search_contents": [
+      "MRO005 ohne IR 2016-08-24.xlsx",
+      "Start of experiment on 24/08/2016 at 11:57:10 with  Tj set to 25 C and stirrer off, (NH4)2HPO4=20 ml",
+      "step8",
+      "step5",
+      "Ramp stirrer speed to 200 rpm over 3 sec",
+      "Dose 5 ml of Ca(NO3)2 Ce(NO3)3 at 0.5 ml/min using DU1",
+      "step4",
       "test MRO005",
-      "MRO005 ohne IR 2016-08-24.xlsx"
+      "End of experiment on 24/08/2016 at 13:31:08  with Tj set to 25 \u00b0C and stirrer off",
+      "Cool Tr to 10 \u00b0C at 5 K/min",
+      "Wait 10 min",
+      "step6",
+      "step2",
+      "Heat Tr to 80 \u00b0C at 1 K/min",
+      "step7",
+      "step9",
+      "Heat Tr to 75 \u00b0C at 5 K/min",
+      "Cool Tr to 20\u00b0C at 5 K/min",
+      "step11",
+      "Wait 30 min",
+      "step1",
+      "step3",
+      "step10"
     ],
-    "n_quantities": 20,
+    "n_quantities": 97,
     "quantities": [
       "",
       "data",
@@ -16966,6 +17077,13 @@
       "data.name",
       "data.pH",
       "data.process_time",
+      "data.steps",
+      "data.steps.action",
+      "data.steps.duration",
+      "data.steps.end_time",
+      "data.steps.name",
+      "data.steps.start_time",
+      "data.steps.temperature",
       "metadata",
       "metadata.entry_name",
       "metadata.entry_type",
@@ -16988,7 +17106,8 @@
       "nomad.datamodel.results.ELN",
       "nomad.datamodel.results.Properties",
       "nomad.datamodel.results.Results",
-      "nomad_material_processing.measurements.MRO005.MyProcessColumn"
+      "nomad_material_processing.measurements.MRO005.MRO005",
+      "nomad_material_processing.measurements.MRO005.Recipe"
     ],
     "section_defs": [
       {
@@ -17009,6 +17128,16 @@
       {
         "definition_qualified_name": "nomad.datamodel.datamodel.EntryMetadata",
         "definition_id": "64204c5d96eb1385b547f3cb9148aa6d6a7c6f2a",
+        "used_directly": true
+      },
+      {
+        "definition_qualified_name": "nomad.datamodel.metainfo.basesections.v1.ActivityStep",
+        "definition_id": "a99fab14031097eb4b33562274029bd735d753fa",
+        "used_directly": false
+      },
+      {
+        "definition_qualified_name": "nomad.datamodel.metainfo.basesections.v1.ProcessStep",
+        "definition_id": "c1ab49b91cd0a92bd199740e3a6a2184a8e1498e",
         "used_directly": true
       },
       {
@@ -17042,35 +17171,436 @@
         "used_directly": true
       },
       {
-        "definition_qualified_name": "nomad_material_processing.measurements.MRO005.MyProcessColumn",
-        "definition_id": "78aabb5abc8a9d45c1c9144365149c49f6e8d92f",
+        "definition_qualified_name": "nomad_material_processing.measurements.MRO005.MRO005",
+        "definition_id": "1148d2d0ed4a28295be10c4df9ade02c7ec9f829",
+        "used_directly": true
+      },
+      {
+        "definition_qualified_name": "nomad_material_processing.measurements.MRO005.Recipe",
+        "definition_id": "dd66f9a231a2cb2a6855e7eb9ff3a7d3c95bc2c7",
         "used_directly": true
       }
     ],
     "search_quantities": [
       {
-        "id": "data.data_file#nomad_material_processing.measurements.MRO005.MyProcessColumn",
-        "definition": "nomad_material_processing.measurements.MRO005.MyProcessColumn.data_file",
+        "id": "data.data_file#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.MRO005.data_file",
         "path_archive": "data.data_file",
         "str_value": "MRO005 ohne IR 2016-08-24.xlsx"
       },
       {
-        "id": "data.fill_archive_from_datafile#nomad_material_processing.measurements.MRO005.MyProcessColumn",
+        "id": "data.steps.name#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.ActivityStep.name",
+        "path_archive": "data.steps.0.name",
+        "str_value": "step1"
+      },
+      {
+        "id": "data.steps.action#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.action",
+        "path_archive": "data.steps.0.action",
+        "str_value": "Start of experiment on 24/08/2016 at 11:57:10 with  Tj set to 25 C and stirrer off, (NH4)2HPO4=20 ml"
+      },
+      {
+        "id": "data.steps.duration#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.duration",
+        "path_archive": "data.steps.0.duration",
+        "int_value": 5
+      },
+      {
+        "id": "data.steps.start_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.start_time",
+        "path_archive": "data.steps.0.start_time",
+        "datetime_value": "2025-05-12T00:00:00+00:00"
+      },
+      {
+        "id": "data.steps.end_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.end_time",
+        "path_archive": "data.steps.0.end_time",
+        "datetime_value": "2025-05-12T00:00:05+00:00"
+      },
+      {
+        "id": "data.steps.temperature#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.temperature",
+        "path_archive": "data.steps.0.temperature",
+        "float_value": 0.0
+      },
+      {
+        "id": "data.steps.name#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.ActivityStep.name",
+        "path_archive": "data.steps.1.name",
+        "str_value": "step2"
+      },
+      {
+        "id": "data.steps.action#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.action",
+        "path_archive": "data.steps.1.action",
+        "str_value": "Ramp stirrer speed to 200 rpm over 3 sec"
+      },
+      {
+        "id": "data.steps.duration#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.duration",
+        "path_archive": "data.steps.1.duration",
+        "int_value": 5
+      },
+      {
+        "id": "data.steps.start_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.start_time",
+        "path_archive": "data.steps.1.start_time",
+        "datetime_value": "2025-05-12T00:00:05+00:00"
+      },
+      {
+        "id": "data.steps.end_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.end_time",
+        "path_archive": "data.steps.1.end_time",
+        "datetime_value": "2025-05-12T00:00:10+00:00"
+      },
+      {
+        "id": "data.steps.temperature#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.temperature",
+        "path_archive": "data.steps.1.temperature",
+        "float_value": 25.4
+      },
+      {
+        "id": "data.steps.name#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.ActivityStep.name",
+        "path_archive": "data.steps.2.name",
+        "str_value": "step3"
+      },
+      {
+        "id": "data.steps.action#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.action",
+        "path_archive": "data.steps.2.action",
+        "str_value": "Cool Tr to 10 \u00b0C at 5 K/min"
+      },
+      {
+        "id": "data.steps.duration#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.duration",
+        "path_archive": "data.steps.2.duration",
+        "int_value": 187
+      },
+      {
+        "id": "data.steps.start_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.start_time",
+        "path_archive": "data.steps.2.start_time",
+        "datetime_value": "2025-05-12T00:00:10+00:00"
+      },
+      {
+        "id": "data.steps.end_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.end_time",
+        "path_archive": "data.steps.2.end_time",
+        "datetime_value": "2025-05-12T00:03:18+00:00"
+      },
+      {
+        "id": "data.steps.temperature#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.temperature",
+        "path_archive": "data.steps.2.temperature",
+        "float_value": 25.4
+      },
+      {
+        "id": "data.steps.name#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.ActivityStep.name",
+        "path_archive": "data.steps.3.name",
+        "str_value": "step4"
+      },
+      {
+        "id": "data.steps.action#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.action",
+        "path_archive": "data.steps.3.action",
+        "str_value": "Wait 10 min"
+      },
+      {
+        "id": "data.steps.duration#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.duration",
+        "path_archive": "data.steps.3.duration",
+        "int_value": 600
+      },
+      {
+        "id": "data.steps.start_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.start_time",
+        "path_archive": "data.steps.3.start_time",
+        "datetime_value": "2025-05-12T00:03:18+00:00"
+      },
+      {
+        "id": "data.steps.end_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.end_time",
+        "path_archive": "data.steps.3.end_time",
+        "datetime_value": "2025-05-12T00:13:18+00:00"
+      },
+      {
+        "id": "data.steps.temperature#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.temperature",
+        "path_archive": "data.steps.3.temperature",
+        "float_value": 22.0
+      },
+      {
+        "id": "data.steps.name#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.ActivityStep.name",
+        "path_archive": "data.steps.4.name",
+        "str_value": "step5"
+      },
+      {
+        "id": "data.steps.action#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.action",
+        "path_archive": "data.steps.4.action",
+        "str_value": "Dose 5 ml of Ca(NO3)2 Ce(NO3)3 at 0.5 ml/min using DU1"
+      },
+      {
+        "id": "data.steps.duration#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.duration",
+        "path_archive": "data.steps.4.duration",
+        "int_value": 632
+      },
+      {
+        "id": "data.steps.start_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.start_time",
+        "path_archive": "data.steps.4.start_time",
+        "datetime_value": "2025-05-12T00:13:18+00:00"
+      },
+      {
+        "id": "data.steps.end_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.end_time",
+        "path_archive": "data.steps.4.end_time",
+        "datetime_value": "2025-05-12T00:23:50+00:00"
+      },
+      {
+        "id": "data.steps.temperature#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.temperature",
+        "path_archive": "data.steps.4.temperature",
+        "float_value": 10.3
+      },
+      {
+        "id": "data.steps.name#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.ActivityStep.name",
+        "path_archive": "data.steps.5.name",
+        "str_value": "step6"
+      },
+      {
+        "id": "data.steps.action#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.action",
+        "path_archive": "data.steps.5.action",
+        "str_value": "Wait 30 min"
+      },
+      {
+        "id": "data.steps.duration#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.duration",
+        "path_archive": "data.steps.5.duration",
+        "int_value": 1800
+      },
+      {
+        "id": "data.steps.start_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.start_time",
+        "path_archive": "data.steps.5.start_time",
+        "datetime_value": "2025-05-12T00:23:50+00:00"
+      },
+      {
+        "id": "data.steps.end_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.end_time",
+        "path_archive": "data.steps.5.end_time",
+        "datetime_value": "2025-05-12T00:53:50+00:00"
+      },
+      {
+        "id": "data.steps.temperature#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.temperature",
+        "path_archive": "data.steps.5.temperature",
+        "float_value": 10.2
+      },
+      {
+        "id": "data.steps.name#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.ActivityStep.name",
+        "path_archive": "data.steps.6.name",
+        "str_value": "step7"
+      },
+      {
+        "id": "data.steps.action#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.action",
+        "path_archive": "data.steps.6.action",
+        "str_value": "Heat Tr to 75 \u00b0C at 5 K/min"
+      },
+      {
+        "id": "data.steps.duration#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.duration",
+        "path_archive": "data.steps.6.duration",
+        "int_value": 782
+      },
+      {
+        "id": "data.steps.start_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.start_time",
+        "path_archive": "data.steps.6.start_time",
+        "datetime_value": "2025-05-12T00:53:50+00:00"
+      },
+      {
+        "id": "data.steps.end_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.end_time",
+        "path_archive": "data.steps.6.end_time",
+        "datetime_value": "2025-05-12T01:06:52+00:00"
+      },
+      {
+        "id": "data.steps.temperature#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.temperature",
+        "path_archive": "data.steps.6.temperature",
+        "float_value": 10.0
+      },
+      {
+        "id": "data.steps.name#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.ActivityStep.name",
+        "path_archive": "data.steps.7.name",
+        "str_value": "step8"
+      },
+      {
+        "id": "data.steps.action#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.action",
+        "path_archive": "data.steps.7.action",
+        "str_value": "Heat Tr to 80 \u00b0C at 1 K/min"
+      },
+      {
+        "id": "data.steps.duration#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.duration",
+        "path_archive": "data.steps.7.duration",
+        "int_value": 302
+      },
+      {
+        "id": "data.steps.start_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.start_time",
+        "path_archive": "data.steps.7.start_time",
+        "datetime_value": "2025-05-12T01:06:52+00:00"
+      },
+      {
+        "id": "data.steps.end_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.end_time",
+        "path_archive": "data.steps.7.end_time",
+        "datetime_value": "2025-05-12T01:11:54+00:00"
+      },
+      {
+        "id": "data.steps.temperature#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.temperature",
+        "path_archive": "data.steps.7.temperature",
+        "float_value": 71.9
+      },
+      {
+        "id": "data.steps.name#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.ActivityStep.name",
+        "path_archive": "data.steps.8.name",
+        "str_value": "step9"
+      },
+      {
+        "id": "data.steps.action#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.action",
+        "path_archive": "data.steps.8.action",
+        "str_value": "Wait 10 min"
+      },
+      {
+        "id": "data.steps.duration#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.duration",
+        "path_archive": "data.steps.8.duration",
+        "int_value": 600
+      },
+      {
+        "id": "data.steps.start_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.start_time",
+        "path_archive": "data.steps.8.start_time",
+        "datetime_value": "2025-05-12T01:11:54+00:00"
+      },
+      {
+        "id": "data.steps.end_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.end_time",
+        "path_archive": "data.steps.8.end_time",
+        "datetime_value": "2025-05-12T01:21:54+00:00"
+      },
+      {
+        "id": "data.steps.temperature#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.temperature",
+        "path_archive": "data.steps.8.temperature",
+        "float_value": 80.8
+      },
+      {
+        "id": "data.steps.name#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.ActivityStep.name",
+        "path_archive": "data.steps.9.name",
+        "str_value": "step10"
+      },
+      {
+        "id": "data.steps.action#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.action",
+        "path_archive": "data.steps.9.action",
+        "str_value": "Cool Tr to 20\u00b0C at 5 K/min"
+      },
+      {
+        "id": "data.steps.duration#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.duration",
+        "path_archive": "data.steps.9.duration",
+        "int_value": 723
+      },
+      {
+        "id": "data.steps.start_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.start_time",
+        "path_archive": "data.steps.9.start_time",
+        "datetime_value": "2025-05-12T01:21:55+00:00"
+      },
+      {
+        "id": "data.steps.end_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.end_time",
+        "path_archive": "data.steps.9.end_time",
+        "datetime_value": "2025-05-12T01:33:58+00:00"
+      },
+      {
+        "id": "data.steps.temperature#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.temperature",
+        "path_archive": "data.steps.9.temperature",
+        "float_value": 81.2
+      },
+      {
+        "id": "data.steps.name#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad.datamodel.metainfo.basesections.v1.ActivityStep.name",
+        "path_archive": "data.steps.10.name",
+        "str_value": "step11"
+      },
+      {
+        "id": "data.steps.action#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.action",
+        "path_archive": "data.steps.10.action",
+        "str_value": "End of experiment on 24/08/2016 at 13:31:08  with Tj set to 25 \u00b0C and stirrer off"
+      },
+      {
+        "id": "data.steps.duration#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.duration",
+        "path_archive": "data.steps.10.duration",
+        "int_value": 5
+      },
+      {
+        "id": "data.steps.start_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.start_time",
+        "path_archive": "data.steps.10.start_time",
+        "datetime_value": "2025-05-12T01:33:58+00:00"
+      },
+      {
+        "id": "data.steps.end_time#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.end_time",
+        "path_archive": "data.steps.10.end_time",
+        "datetime_value": "2025-05-12T01:34:04+00:00"
+      },
+      {
+        "id": "data.steps.temperature#nomad_material_processing.measurements.MRO005.MRO005",
+        "definition": "nomad_material_processing.measurements.MRO005.Recipe.temperature",
+        "path_archive": "data.steps.10.temperature",
+        "float_value": 28.1
+      },
+      {
+        "id": "data.fill_archive_from_datafile#nomad_material_processing.measurements.MRO005.MRO005",
         "definition": "nomad.parsing.tabular.TableData.fill_archive_from_datafile",
         "path_archive": "data.fill_archive_from_datafile",
         "bool_value": false
       },
       {
-        "id": "data.name#nomad_material_processing.measurements.MRO005.MyProcessColumn",
+        "id": "data.name#nomad_material_processing.measurements.MRO005.MRO005",
         "definition": "nomad.datamodel.metainfo.eln.ElnBaseSection.name",
         "path_archive": "data.name",
         "str_value": "test MRO005"
       },
       {
-        "id": "data.datetime#nomad_material_processing.measurements.MRO005.MyProcessColumn",
+        "id": "data.datetime#nomad_material_processing.measurements.MRO005.MRO005",
         "definition": "nomad.datamodel.metainfo.eln.ElnBaseSection.datetime",
         "path_archive": "data.datetime",
-        "datetime_value": "2025-05-11T23:07:24.905681+00:00"
+        "datetime_value": "2025-05-12T16:32:44.273588+00:00"
       }
     ]
   },
@@ -17078,7 +17608,7 @@
     "properties": {},
     "eln": {
       "sections": [
-        "MyProcessColumn"
+        "MRO005"
       ],
       "names": [
         "test MRO005"
