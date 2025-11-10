@@ -21,7 +21,7 @@ from nomad.datamodel.metainfo.basesections import (
     PureSubstanceComponent,
     SystemComponent,
 )
-from nomad.metainfo import (
+from nomad.datamodel import (
     Category,
     Datetime,
     MEnum,
@@ -38,7 +38,7 @@ from nomad_material_processing.solution.utils import (
 )
 
 if TYPE_CHECKING:
-    from nomad.metainfo import EntryArchive
+    from nomad.datamodel import EntryArchive
     from structlog.stdlib import BoundLogger
 
 from nomad.config import config
@@ -924,7 +924,7 @@ class SolutionPreparation(Process, EntryData):
         Returns:
             str: The reference to the solution entry.
         """
-        from nomad.metainfo import EntryArchive
+        from nomad.datamodel import EntryArchive
 
         if self.solution_name:
             solution_file_name = (

@@ -22,7 +22,7 @@ from typing import TYPE_CHECKING
 import yaml
 
 if TYPE_CHECKING:
-    from nomad.metainfo import EntryArchive
+    from nomad.datamodel import EntryArchive
 
 
 def get_reference(upload_id, entry_id):
